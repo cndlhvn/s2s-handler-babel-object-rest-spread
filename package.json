@@ -4,6 +4,7 @@
   "description": "s2s handler for babel syntax object rest spread",
   "main": "./lib/index.js",
   "scripts": {
+    "build": "babel src --out-dir lib",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "files": [
