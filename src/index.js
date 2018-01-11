@@ -1,4 +1,5 @@
 import { transform } from 'babel-core'
+import { getPluginName } from 's2s-helper-get-plugin-name'
 
 export default function babelHandler(code, { eventPath, plugin, filename }){
 
@@ -16,8 +17,14 @@ export default function babelHandler(code, { eventPath, plugin, filename }){
   const { code: result } = transform(code, {
     filename,
     babelrc: false,
-    plugins: ['babel-plugin-syntax-object-rest-spread', lastPlugin]
+    plugins: [lastPlugin]
   })
 
-  return result ? result.trim() : ''
+  return {
+    code: result ? result.trim() : '',
+    meta: {
+      handlerName: 'babel/object-rest-spread',
+      pluginName: getPluginName(lastPlugin[0])
+    },
+  }
 }

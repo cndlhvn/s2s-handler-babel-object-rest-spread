@@ -1,6 +1,6 @@
 {
   "name": "s2s-handler-babel-object-rest-spread",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "s2s handler for babel syntax object rest spread",
   "main": "./lib/index.js",
   "scripts": {
