@@ -17,7 +17,7 @@ export default function babelHandler(code, { eventPath, plugin, filename }){
   const { code: result } = transform(code, {
     filename,
     babelrc: false,
-    plugins: [lastPlugin]
+    plugins: ['babel-plugin-syntax-object-rest-spread',lastPlugin]
   })
 
   return {
