@@ -607,6 +607,10 @@ repeating@^2.0.0:
   dependencies:
     is-finite "^1.0.0"
 
+s2s-helper-get-plugin-name@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/s2s-helper-get-plugin-name/-/s2s-helper-get-plugin-name-0.1.0.tgz#6ed1855be5d6638d3b2d32b9be7c7d5b6d532222"
+
 slash@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/slash/-/slash-1.0.0.tgz#c41f2f6c39fc16d1cd17ad4b5d896114ae470d55"
